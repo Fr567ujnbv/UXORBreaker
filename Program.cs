@@ -205,7 +205,6 @@ Press any key to exit . . ."
 						using (FileStream writer = File.OpenWrite(dArg))
 						{
 							long blockPtr = file.Position;
-							file.Position = 0;
 
 							// Try to guess XOR seed by counting the most common byte in header (likely to be the null bytes)
 							int checksize = 256;
